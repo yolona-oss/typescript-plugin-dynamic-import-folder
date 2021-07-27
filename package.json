@@ -1,0 +1,23 @@
+{
+  "name": "typescript-plugin-dynamic-import-folder",
+  "version": "0.0.1",
+  "description": "A Typescript transformer that automatically imports all the code in a folder. Intended for plugin-like systems.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "dynamic",
+    "import",
+    "import",
+    "modules",
+    "plugins"
+  ],
+  "author": "Gibryon Bhojraj <gibryon@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.3.5"
+  }
+}
