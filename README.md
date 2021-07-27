@@ -11,7 +11,7 @@ let x = await import('./plugins/*');
 let x = await Promise.all([Promise.resolve().then(() => require(".\\plugins\\TestPlugin")), Promise.resolve().then(() => require(".\\plugins\\TestPlugin2"))]);
 ```
 
-Note: Using Transformers isn't officially supported in Typescript.
+Note: Using Transformers [isn't officially supported](https://github.com/microsoft/TypeScript/issues/14419) in Typescript.
 
 Similar projects:
 * [babel-plugin-wildcard](https://github.com/vihanb/babel-plugin-wildcard) - A plugin that imports files as named properties to an object. Not dynamic.
