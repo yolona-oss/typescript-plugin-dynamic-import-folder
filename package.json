@@ -4,7 +4,7 @@
   "description": "A Typescript transformer that automatically imports all the code in a folder. Intended for plugin-like systems.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx ttsc && node .\\build\\testSource.js"
   },
   "keywords": [
     "typescript",
