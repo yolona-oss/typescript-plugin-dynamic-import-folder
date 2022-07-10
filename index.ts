@@ -28,7 +28,7 @@ const transformer: ts.TransformerFactory<ts.SourceFile> = context => {
                                     const importKeyword = ts.factory.createToken(ts.SyntaxKind.ImportKeyword);
                                     const importId = ts.factory.createIdentifier("import");
                                     const relPath = path.join(dir.slice(0, dir.length - 2), path.parse(filename).name);
-                                    const literalFilenameArg = [ts.factory.createStringLiteral('.\\' + relPath)];
+                                    const literalFilenameArg = [ts.factory.createStringLiteral('.' + path.delimiter + relPath)];
 
                                     return ts.factory.createCallExpression(
                                         // The typing on this argument is ts.Expression, but the following AST Viewer actually emits this code as valid for TS 4.3.2
